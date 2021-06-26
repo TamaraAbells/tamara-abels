@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Images from "../../../Assets/Images/images";
 
 const HomeNav = () => {
+  const [open, setOpen] = useState(false);
+
+
   return (
     <>
       <HomeNavStyles>
@@ -13,7 +17,12 @@ const HomeNav = () => {
           </div>
           <div className="cta">
             <button className="outline">sign up</button>
-            <button className="filled">login</button>
+            <button className="filled">login</button>=
+            <Menu open={open} onClick={() => setOpen(!open)}>
+              <span />
+              <span />
+              <span />
+            </Menu>
           </div>
         </div>
       </HomeNavStyles>
@@ -67,6 +76,45 @@ const HomeNavStyles = styled.div`
           background: none;
         }
       }
+    }
+  }
+`;
+
+const Menu = styled.div`
+  width: 1.5rem;
+  height: 2rem;
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  top: 15px;
+  right: 20px;
+  z-index: 20;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+
+  span {
+    height: 2px;
+    width: 2.05rem;
+    background: ${({ open }) => (open ? "#ccc" : "#606060")};
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+
+    &:nth-child(1) {
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    }
+
+    &:nth-child(2) {
+      transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
+      opacity: ${({ open }) => (open ? 0 : 1)};
+    }
+
+    &:nth-child(3) {
+      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
 `;

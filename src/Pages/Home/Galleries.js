@@ -347,7 +347,6 @@ const GalleryStyles = styled.div`
     width: 40%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 
     div {
       width: 240px;
