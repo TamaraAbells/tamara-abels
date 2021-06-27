@@ -46,8 +46,38 @@ import pic5 from "./pic5.png";
 import pic6 from "./pic6.png";
 import pic7 from "./pic7.png";
 import fot1 from "./fot1.svg";
+import user from "./user.png";
 import footerBg from "./footerBg.png";
-
+import profileBanner from "./profileBanner.png";
+import smallHeart from "./smallHeart.svg";
+import wizard from "./wizard.svg";
+import thread from "./thread.svg";
+import baseBat from "./baseBat.svg";
+import baseBall from "./baseBall.svg";
+import connect1 from "./connect1.png";
+import connect2 from "./connect2.png";
+import connect3 from "./connect3.png";
+import connect4 from "./connect4.png";
+import connect5 from "./connect5.png";
+import connect6 from "./connect6.png";
+import connect7 from "./connect7.png";
+import connect8 from "./connect8.png";
+import connect9 from "./connect9.png";
+import connect10 from "./connect10.png";
+import connect11 from "./connect11.png";
+import connect12 from "./connect12.png";
+import connect13 from "./connect13.png";
+import connect14 from "./connect14.png";
+import connect15 from "./connect15.png";
+import connect16 from "./connect16.png";
+import connect17 from "./connect17.png";
+import connect18 from "./connect18.png";
+import past1 from "./past1.png";
+import past2 from "./past2.png";
+import past3 from "./past3.png";
+import events1 from "./events1.png";
+import events2 from "./events2.png";
+import blogCover from "./blogCover.png";
 
 const Images = {
   navBg,
@@ -99,6 +129,37 @@ const Images = {
   pic7,
   fot1,
   footerBg,
+  user,
+  profileBanner,
+  smallHeart,
+  wizard,
+  thread,
+  baseBat,
+  baseBall,
+  connect1,
+  connect2,
+  connect3,
+  connect4,
+  connect5,
+  connect6,
+  connect7,
+  connect8,
+  connect9,
+  connect10,
+  connect11,
+  connect12,
+  connect13,
+  connect14,
+  connect15,
+  connect16,
+  connect17,
+  connect18,
+  past1,
+  past2,
+  past3,
+  events1,
+  events2,
+  blogCover,
 };
 
 export default Images;
