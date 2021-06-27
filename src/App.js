@@ -1,7 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import GuiderProfile from "./Pages/GuiderProfile";
 import Home from "./Pages/Home/Home";
-import Profile from "./Pages/Profile/Profile";
+import TravelerProfile from "./Pages/TravelerProfile";
 import GlobalStyles from "./Styles/GlobalStyle";
 
 function App() {
@@ -13,9 +19,13 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/profile">
-            <Profile />
+          <Route path="/traveler-profile">
+            <TravelerProfile />
           </Route>
+          <Route path="/guider-profile">
+            <GuiderProfile />
+          </Route>
+          <Redirect to="/" />
         </Switch>
       </Router>
     </>

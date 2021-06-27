@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import ProfileHeader from "./Header";
 import ProfileBody from "./ProfileBody";
 
-const Profile = () => {
+const GuiderProfile = () => {
   return (
     <>
       <ProfileStyles>
@@ -16,7 +16,7 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default GuiderProfile;
 const ProfileStyles = styled.div`
   .name {
     display: flex;
