@@ -13,4 +13,6 @@ const RightSection = () => {
 };
 
 export default RightSection;
-const RightSectionStyles = styled.div``;
+const RightSectionStyles = styled.div`
+  width: 24.5%;
+`;

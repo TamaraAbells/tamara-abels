@@ -6,11 +6,13 @@ const LeftSection = () => {
   return (
     <>
       <LeftSectionStyles>
-        <FeatureCard />
+        <FeatureCard noSub />
       </LeftSectionStyles>
     </>
   );
 };
 
 export default LeftSection;
-const LeftSectionStyles = styled.div``;
+const LeftSectionStyles = styled.div`
+  width: 24.5%;
+`;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Images from "../../Assets/Images/images";
 
-const FeatureCard = () => {
+const FeatureCard = ({ noSub }) => {
   const { wizard, thread, baseBat, baseBall } = Images;
 
   const images = [wizard, thread, baseBat, baseBall];
@@ -12,7 +12,7 @@ const FeatureCard = () => {
       <FeatureCardStyles>
         <div className="name">
           <h5>Featured Activities</h5>
-          <p>See Full Library</p>
+          {noSub ? "" : <p>See Full Library </p>}
         </div>
         <div className="cards">
           {images.map((image, index) => (
@@ -51,6 +51,7 @@ const FeatureCardStyles = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 1rem;
       img {
         display: block;
         width: 70px;

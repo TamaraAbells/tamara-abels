@@ -106,6 +106,7 @@ const EventsCardStyles = styled.div`
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      margin-top: 2rem;
 
       .bg {
         width: 48%;

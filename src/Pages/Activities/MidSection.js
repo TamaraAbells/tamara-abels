@@ -20,4 +20,6 @@ const MidSection = () => {
 };
 
 export default MidSection;
-const MidSectionStyles = styled.div``;
+const MidSectionStyles = styled.div`
+  width: 48%;
+`;
