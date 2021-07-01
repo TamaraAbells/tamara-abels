@@ -3,12 +3,12 @@ import styled from "styled-components";
 import Images from "../../Assets/Images/images";
 import { MdDateRange, MdAccessTime } from "react-icons/md";
 
-const EventsCard = () => {
+const EventsCard = ({ cardWidth, cardDisplay }) => {
   const { events1, events2 } = Images;
 
   return (
     <>
-      <EventsCardStyles>
+      <EventsCardStyles cardWidth={cardWidth} cardDisplay={cardDisplay}>
         <div className="top">
           <h5>Upcoming Events</h5>
         </div>
@@ -90,14 +90,14 @@ const EventsCardStyles = styled.div`
 
   .events {
     width: 100%;
-    display: flex;
+    display: ${({ cardDisplay }) => cardDisplay};
     align-items: center;
     justify-content: space-between;
     margin-top: 2rem;
     flex-wrap: wrap;
 
     .event {
-      width: 49%;
+      width: ${({ cardWidth }) => cardWidth};
       background: #ffffff;
       border: 1px solid #fee05f;
       box-sizing: border-box;

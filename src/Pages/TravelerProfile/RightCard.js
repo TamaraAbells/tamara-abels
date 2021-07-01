@@ -26,7 +26,7 @@ const RightCard = () => {
           hoverEffect={gridText}
         />
         <Ratings />
-        <EventsCard />
+        <EventsCard cardWidth="49%" cardDisplay="flex"/>
         <ThoughtsCard />
         <BlogPost />
       </RightCardStyles>

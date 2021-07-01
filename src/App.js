@@ -5,6 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import Activities from "./Pages/Activities";
 import GuiderProfile from "./Pages/GuiderProfile";
 import Home from "./Pages/Home/Home";
 import TravelerProfile from "./Pages/TravelerProfile";
@@ -18,6 +19,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/activities">
+            <Activities />
           </Route>
           <Route path="/traveler-profile">
             <TravelerProfile />
