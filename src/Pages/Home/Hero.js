@@ -33,6 +33,10 @@ const HeroStyles = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media screen and (max-width: 800px) {
+    height: 60vh;
+  }
+
   .hero {
     width: 80%;
     margin: 4rem auto 2rem;
@@ -47,12 +51,21 @@ const HeroStyles = styled.div`
       text-transform: uppercase;
     }
 
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      margin: 3rem auto;
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+
     .hero-cta {
       width: 685px;
       background: rgba(0, 0, 0, 0.3);
       border-radius: 20px;
       margin-top: 2rem;
       padding: 1.5rem;
+
       input {
         width: 150px;
         height: 45px;
@@ -74,6 +87,22 @@ const HeroStyles = styled.div`
 
         &:hover {
           transform: scale(1.05);
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        width: 90%;
+        input,
+        button {
+          width: 46%;
+        }
+
+        input:nth-child(3) {
+          margin-top: 1rem;
+        }
+
+        button {
+          margin-top: 1rem;
         }
       }
     }

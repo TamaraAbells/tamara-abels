@@ -343,6 +343,11 @@ const GalleryStyles = styled.div`
     transition: transform 0.5s ease-in-out;
   }
 
+  @media screen and (max-width: 800px) {
+    display: block;
+    padding: 2rem;
+  }
+
   .first-left {
     width: 40%;
     display: flex;
@@ -378,6 +383,16 @@ const GalleryStyles = styled.div`
         }
       }
     }
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      display: block;
+
+      div {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   .first-right {
@@ -386,6 +401,11 @@ const GalleryStyles = styled.div`
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
     &:hover {
       img {
         transform: scale(1.03);
@@ -442,10 +462,18 @@ const GalleryStyles = styled.div`
     border-radius: 20px;
     padding: 1.2rem;
 
+    @media screen and (max-width: 800px) {
+      position: static;
+      margin-top: 2rem;
+    }
     .slide-item {
       width: 70px;
       height: 70px;
       margin: 0 1rem;
+
+      @media screen and (max-width: 800px) {
+        width: 30%;
+      }
 
       img {
         display: block;

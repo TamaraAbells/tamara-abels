@@ -31,6 +31,12 @@ const HYGStyles = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 800px) {
+    position: static;
+    width: 90%;
+    margin: auto;
+  }
+
   .svg {
     width: 130px;
     height: 130px;
@@ -44,6 +50,15 @@ const HYGStyles = styled.div`
 
     img {
       width: 70px;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 30%;
+      height: 120px;
+
+      img {
+        width: 50px;
+      }
     }
   }
 `;

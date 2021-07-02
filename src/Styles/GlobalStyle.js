@@ -57,11 +57,7 @@ const GlobalStyles = createGlobalStyle`
 
   ${"" /* flex-box cases */}
 
-  .flex-btw {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
 
 
 `;

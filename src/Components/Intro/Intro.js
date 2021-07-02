@@ -27,4 +27,10 @@ const IntroStyles = styled.div`
     color: ${({ setColor }) => setColor};
     font-style: italic;
   }
+
+  @media screen and (max-width: 800px) {
+    h3 {
+      font-size: 2rem;
+    }
+   }
 `;

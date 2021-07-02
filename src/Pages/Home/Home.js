@@ -18,4 +18,7 @@ const Home = () => {
 
 export default Home;
 
-const HomeStyles = styled.div``;
+const HomeStyles = styled.div`
+  width: 100%;
+  overflow: hidden;
+`;

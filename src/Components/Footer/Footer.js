@@ -128,31 +128,53 @@ const FooterStyles = styled.div`
   background: url(${footerBg});
   color: #fff;
 
+  @media screen and (max-width: 800px) {
+    margin-top: 1rem;
+  }
+
   h6 {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.2rem;
+    }
   }
 
   p {
     font-style: normal;
     font-weight: normal;
     font-size: 0.8rem;
+    @media screen and (max-width: 800px) {
+      font-size: 1rem;
+    }
   }
   .footer-top {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 800px) {
+      display: block;
+      text-align: left;
+    }
+
     .company {
       display: flex;
       justify-content: space-between;
       width: 50%;
-
+      @media screen and (max-width: 800px) {
+        display: block;
+        width: 100%;
+      }
       section {
-        width: 100px !important;
+        width: 80%;
+        @media screen and (max-width: 800px) {
+          padding-bottom: 5rem;
+         }
       }
 
       div {

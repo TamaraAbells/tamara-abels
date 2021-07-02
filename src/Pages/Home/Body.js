@@ -67,9 +67,17 @@ const BodyStyles = styled.div`
 
   .space-4 {
     padding-top: 8rem;
+
+    @media screen and (max-width: 800px) {
+      padding-top: 4.5rem;
+    }
   }
 
   .space-5 {
     padding-top: 12rem;
+
+    @media screen and (max-width: 800px) {
+      padding-top: 4rem;
+    }
   }
 `;
