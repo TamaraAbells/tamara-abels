@@ -78,6 +78,12 @@ import past3 from "./past3.png";
 import events1 from "./events1.png";
 import events2 from "./events2.png";
 import blogCover from "./blogCover.png";
+import guilderCover from "./guilderCover.png";
+import statsBg from "./statsBg.png";
+import space1 from "./space1.png";
+import space2 from "./space2.png";
+import space3 from "./space3.png";
+import space4 from "./space4.png";
 
 const Images = {
   navBg,
@@ -160,6 +166,12 @@ const Images = {
   events1,
   events2,
   blogCover,
+  guilderCover,
+  statsBg,
+  space1,
+  space2,
+  space3,
+  space4,
 };
 
 export default Images;

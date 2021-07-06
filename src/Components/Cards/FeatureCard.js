@@ -1,8 +1,9 @@
 import React from "react";
+import { IoAddCircleOutline } from "react-icons/io5";
 import styled from "styled-components";
 import Images from "../../Assets/Images/images";
 
-const FeatureCard = ({ noSub }) => {
+const FeatureCard = ({ title, noSub, cta }) => {
   const { wizard, thread, baseBat, baseBall } = Images;
 
   const images = [wizard, thread, baseBat, baseBall];
@@ -11,8 +12,13 @@ const FeatureCard = ({ noSub }) => {
     <>
       <FeatureCardStyles>
         <div className="name">
-          <h5>Featured Activities</h5>
+          <h5>{title ? title : "Featured Activities" }</h5>
           {noSub ? "" : <p>See Full Library </p>}
+          {cta && (
+            <button>
+              Add New <IoAddCircleOutline />
+            </button>
+          )}
         </div>
         <div className="cards">
           {images.map((image, index) => (
@@ -33,6 +39,12 @@ const FeatureCardStyles = styled.div`
   padding: 1.5rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+
+  button {
+    padding: 0.4rem;
+    background: rgba(255, 184, 184, 0.5);
+    border-radius: 10px;
+  }
 
   .cards {
     width: 95%;

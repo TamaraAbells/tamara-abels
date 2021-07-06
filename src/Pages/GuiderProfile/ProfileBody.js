@@ -17,10 +17,9 @@ const ProfileBody = () => {
 export default ProfileBody;
 const ProfileBodyStyles = styled.div`
   width: 100%;
-  margin: 4rem auto;
-  padding: 3rem;
+  margin: 1rem auto;
+  padding: 0 3rem;
   margin-bottom: 0;
-  padding-bottom: 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
