@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Images from "../../Assets/Images/images";
+import Experience from "../../Components/Cards/Experience";
 import FeatureCard from "../../Components/Cards/FeatureCard";
 import GridCard from "../../Components/Cards/GridCard";
 import Spaces from "../../Components/Cards/Spaces";
@@ -110,6 +111,7 @@ const LeftCard = () => {
   return (
     <>
       <LeftCardStyles>
+        <Experience />
         <GridCard
           title="Group Tours"
           smallText="See All"
