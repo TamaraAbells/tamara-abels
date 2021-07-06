@@ -3368,6 +3368,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.5:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
@@ -10909,10 +10914,12 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-uikit@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.7.0.tgz#1ec777ac547010d980f0c430249289080fa5371c"
-  integrity sha512-N0xluQ380EHey26toMmNA4H2YLtvVRHMaYksG31qDxW2VaAAf9i0Q0aT82zeMdrK2Tx9sqnHz6GaOMTIYYM0ZQ==
+uikit-react@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/uikit-react/-/uikit-react-3.1.2.tgz#c51451a5a31ff62346f0f0d66f156a91d04a2f60"
+  integrity sha512-2+XBkiF2NOxiNI13FnZT5Hdo10QuN99ZWRMOy3IRUltiJs08T5rojtAx+fFDhccPp5HNgwt5cUjH54XaxOLQPQ==
+  dependencies:
+    classnames "^2.2.5"
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

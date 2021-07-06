@@ -47,6 +47,7 @@ const {
 } = Images;
 
 const FirstGallery = () => {
+ 
   return (
     <>
       <GalleryStyles>
@@ -100,6 +101,7 @@ const FirstGallery = () => {
           <div className="slide-item">
             <img src={avatar7} alt="avatar" />
           </div>
+
           <div className="next">
             <img src={next} alt="next" />
           </div>

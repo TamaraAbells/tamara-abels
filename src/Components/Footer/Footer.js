@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>
+          <p id="follow">
             Follow Us On{" "}
             <span>
               <IoLogoTwitter />
@@ -106,7 +106,13 @@ const Footer = () => {
           <hr />
           <div>
             <div>
-              <p>Privacy Policy | </p> <p> Terms of Use | </p>{" "}
+              <p>
+                Privacy Policy <strong> | </strong>
+              </p>{" "}
+              <p>
+                {" "}
+                Terms of Use <strong> | </strong>{" "}
+              </p>{" "}
               <p> Compliance</p>
             </div>
             <p>
@@ -128,8 +134,18 @@ const FooterStyles = styled.div`
   background: url(${footerBg});
   color: #fff;
 
+  #follow {
+    @media screen and (max-width: 800px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+     }
+  }
+
   @media screen and (max-width: 800px) {
     margin-top: 1rem;
+    padding: 2rem;
   }
 
   h6 {
@@ -141,6 +157,7 @@ const FooterStyles = styled.div`
 
     @media screen and (max-width: 800px) {
       font-size: 1.2rem;
+      margin-top: 2rem;
     }
   }
 
@@ -172,9 +189,6 @@ const FooterStyles = styled.div`
       }
       section {
         width: 80%;
-        @media screen and (max-width: 800px) {
-          padding-bottom: 5rem;
-         }
       }
 
       div {
@@ -183,6 +197,10 @@ const FooterStyles = styled.div`
 
         &.rece {
           justify-content: center;
+
+          @media screen and (max-width: 800px) {
+            justify-content: left;
+          }
         }
 
         p:nth-child(2) {
@@ -225,7 +243,9 @@ const FooterStyles = styled.div`
 
     .cta {
       width: 20%;
-
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
       input {
         background: #012234;
         box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -258,6 +278,14 @@ const FooterStyles = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @media screen and (max-width: 800px) {
+        display: block;
+
+        strong {
+          display: none;
+        }
+      }
 
       p {
         margin-right: 0.5rem;
