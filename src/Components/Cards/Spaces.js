@@ -1,6 +1,8 @@
 import React from "react";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { IoAddCircleOutline } from "react-icons/io5";
+import { BiBed, BiBath } from "react-icons/bi";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 import styled from "styled-components";
 
 const Spaces = ({ heading, allData }) => {
@@ -22,11 +24,17 @@ const Spaces = ({ heading, allData }) => {
               <div className="info">
                 <div>
                   <h6>{data.title}</h6>
-                  <p>{data.location}</p>
+                  <p>
+                    <HiOutlineLocationMarker /> {data.location}
+                  </p>
                 </div>
                 <div>
-                  <p>{data.bedrooms} Bedrooms</p>
-                  <p>{data.bathrooms} Full Bath</p>
+                  <p>
+                    <BiBed /> {data.bedrooms} Bedrooms
+                  </p>
+                  <p>
+                    <BiBath /> {data.bathrooms} Full Bath
+                  </p>
                 </div>
               </div>
               <div className="cta">
@@ -53,6 +61,8 @@ const SpacesStyles = styled.div`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   width: 100%;
+  height: auto;
+
   .name {
     button {
       padding: 0.4rem;
@@ -60,6 +70,7 @@ const SpacesStyles = styled.div`
       border-radius: 10px;
     }
   }
+
   .box {
     width: 100%;
     height: 100%;
@@ -71,6 +82,8 @@ const SpacesStyles = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    position: relative;
+
     .img {
       height: 130px;
       overflow: hidden;
@@ -83,10 +96,35 @@ const SpacesStyles = styled.div`
       }
     }
 
+    .info {
+      height: 100%;
+      margin-left: 1rem;
+      div {
+        &:nth-child(1) {
+          margin-bottom: 2rem;
+        }
+        h6 {
+          font-weight: 500;
+          font-size: 1.2rem;
+          color: #2c66b8;
+          margin: 0;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #34c2dd;
+          margin: 0;
+        }
+      }
+    }
+
     .cta {
       padding-top: 0.2rem;
       height: 100%;
-      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-direction: column;
 
       p {
         color: #2c66b8;
@@ -102,14 +140,24 @@ const SpacesStyles = styled.div`
         }
       }
       div {
-        position: absolute;
-        bottom: 0;
-      
+        bottom: 1rem;
+        right: 1rem;
+        display: flex;
+        margin-bottom: auto;
+        margin-top: 30%;
         button {
           width: 97px;
           height: 30px;
           border-radius: 5px;
           color: #fff;
+
+          &:nth-child(1) {
+            background: #f58642;
+          }
+          &:nth-child(2) {
+            background: #fee05f;
+            margin-left: 0.5rem;
+          }
         }
       }
     }

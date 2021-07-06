@@ -63,10 +63,41 @@ const LeftCard = () => {
     {
       title: "House on Mount",
       imgUrl: space2,
-      location: "",
-      bedrooms: "",
-      bathrooms: "",
-      price: "",
+      location: "Montana, USA",
+      bedrooms: "3",
+      bathrooms: "2",
+      price: "49",
+      moreFx: () => {
+        return;
+      },
+      editFx: () => {
+        return;
+      },
+    },
+  ];
+
+  const spaces2 = [
+    {
+      title: "Close to ",
+      imgUrl: space3,
+      location: "Las Vegas, USA",
+      bedrooms: "2",
+      bathrooms: "1",
+      price: "35",
+      moreFx: () => {
+        return;
+      },
+      editFx: () => {
+        return;
+      },
+    },
+    {
+      title: "House on Mount",
+      imgUrl: space4,
+      location: "Montana, USA",
+      bedrooms: "3",
+      bathrooms: "2",
+      price: "49",
       moreFx: () => {
         return;
       },
@@ -91,6 +122,7 @@ const LeftCard = () => {
         />
         <FeatureCard cta noSub title="Skill/Knowledge Share Service" />
         <Spaces heading="Stay Spaces" allData={spaces1} />
+        <Spaces heading="Business Spaces" allData={spaces2} />
       </LeftCardStyles>
     </>
   );
