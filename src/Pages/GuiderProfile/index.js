@@ -24,6 +24,9 @@ const ProfileStyles = styled.div`
     justify-content: space-between;
     font-style: normal;
     font-weight: 500;
+    @media screen and (max-width: 600px) {
+      display: block;
+     }
     h5 {
       font-size: 1.4rem;
       line-height: 2rem;

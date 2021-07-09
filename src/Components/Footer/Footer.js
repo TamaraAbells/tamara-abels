@@ -132,6 +132,9 @@ const FooterStyles = styled.div`
   margin-top: 6rem;
   padding: 3rem;
   background: url(${footerBg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 
   #follow {
@@ -140,7 +143,7 @@ const FooterStyles = styled.div`
       align-items: center;
       justify-content: space-between;
       width: 80%;
-     }
+    }
   }
 
   @media screen and (max-width: 800px) {

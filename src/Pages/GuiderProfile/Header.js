@@ -31,5 +31,9 @@ const HeaderStyles = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 600px) {
+      height: 30vh;
+     }
   }
 `;

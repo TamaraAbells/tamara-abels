@@ -44,6 +44,10 @@ const StatsStyles = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 
+  @media screen and (max-width: 600px) {
+    padding: 1rem;
+   }
+
   div {
     text-align: center;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
