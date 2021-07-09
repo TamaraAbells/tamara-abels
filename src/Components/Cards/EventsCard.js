@@ -96,6 +96,10 @@ const EventsCardStyles = styled.div`
     margin-top: 2rem;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 600px) {
+      display: block !important;
+    }
+
     .event {
       width: ${({ cardWidth }) => cardWidth};
       background: #ffffff;
@@ -107,6 +111,10 @@ const EventsCardStyles = styled.div`
       align-items: flex-start;
       justify-content: space-between;
       margin-top: 2rem;
+
+      @media screen and (max-width: 600px) {
+        width: 100% !important;
+      }
 
       .bg {
         width: 48%;

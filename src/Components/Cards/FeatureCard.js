@@ -42,6 +42,7 @@ const FeatureCardStyles = styled.div`
 
   @media screen and (max-width: 450px) {
     width: 100%;
+    padding: 1rem;
   }
 
   button {

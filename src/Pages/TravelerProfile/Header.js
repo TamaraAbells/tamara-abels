@@ -67,6 +67,11 @@ const HeaderStyles = styled.div`
   height: 85vh;
   position: relative;
 
+  @media screen and (max-width: 400px) {
+    height: 75vh;
+    
+  }
+
   .banner {
     width: 100%;
     height: 50vh;
@@ -74,19 +79,33 @@ const HeaderStyles = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 600px) {
+      height: 30vh;
+    }
   }
 
   .info {
     width: 100%;
-    height: 35vh;
     padding: 3rem;
     display: flex;
     background: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 80px 80px;
 
+    @media screen and (max-width: 800px) {
+      display: block;
+      height: auto;
+      padding: 1rem;
+      border-radius: 0;
+    }
+
     div {
       margin-right: 4rem;
+
+      @media screen and (max-width: 800px) {
+        margin: 0;
+      }
 
       p {
         font-style: normal;
@@ -95,6 +114,9 @@ const HeaderStyles = styled.div`
         line-height: 28px;
         color: #3f3d56;
         margin-bottom: 0;
+        @media screen and (max-width: 800px) {
+          font-size: 1rem;
+        }
       }
 
       h3 {
@@ -106,6 +128,9 @@ const HeaderStyles = styled.div`
         color: #3f3d56;
         margin-bottom: 0;
         margin-top: 1rem;
+        @media screen and (max-width: 800px) {
+          margin-top: 0;
+        }
       }
 
       small {
@@ -117,13 +142,19 @@ const HeaderStyles = styled.div`
   }
 
   .user {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border: 3px solid #3f3d56;
     border-radius: 100%;
     position: absolute;
     bottom: 40px;
     right: 50px;
+
+    @media screen and (max-width: 600px) {
+      bottom: 300px;
+      right: 10px;
+      border: 1px solid #3f3d56;
+    }
 
     .icon {
       position: absolute;

@@ -5,6 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
 import Activities from "./Pages/Activities";
 import GuiderProfile from "./Pages/GuiderProfile";
 import Home from "./Pages/Home/Home";
@@ -14,24 +15,26 @@ import GlobalStyles from "./Styles/GlobalStyle";
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/activities">
-            <Activities />
-          </Route>
-          <Route path="/traveler-profile">
-            <TravelerProfile />
-          </Route>
-          <Route path="/guider-profile">
-            <GuiderProfile />
-          </Route>
-          <Redirect to="/" />
-        </Switch>
-      </Router>
+      <ChakraProvider>
+        <GlobalStyles />
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/activities">
+              <Activities />
+            </Route>
+            <Route path="/traveler-profile">
+              <TravelerProfile />
+            </Route>
+            <Route path="/guider-profile">
+              <GuiderProfile />
+            </Route>
+            <Redirect to="/" />
+          </Switch>
+        </Router>
+      </ChakraProvider>
     </>
   );
 }

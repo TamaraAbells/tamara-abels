@@ -51,6 +51,8 @@ const GridCardStyles = styled.div`
 
     @media screen and (max-width: 450px) {
       display: block;
+      width: 100%;
+      padding: 0;
     }
 
     .grid {
@@ -69,6 +71,11 @@ const GridCardStyles = styled.div`
           opacity: 1;
           visibility: visible;
         }
+      }
+
+      @media screen and (max-width: 450px) {
+        margin-top: 1.3rem;
+        height: 200px;
       }
 
       img {

@@ -26,5 +26,10 @@ const ProfileBodyStyles = styled.div`
   justify-content: space-between;
   @media screen and (max-width: 800px) {
     display: block;
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 0;
   }
 `;

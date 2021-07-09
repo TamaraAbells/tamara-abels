@@ -40,9 +40,14 @@ const RatingsStyles = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 50%;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+     }
   }
 
   .stars {
+    display: flex;
     svg {
       font-size: 1.3rem;
       margin-right: 0.4rem;

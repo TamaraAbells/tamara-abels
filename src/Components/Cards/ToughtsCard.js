@@ -57,6 +57,11 @@ const ThoughtsCardStyles = styled.div`
       height: 60px;
       border: 2px solid #3f3d56;
       border-radius: 100%;
+
+      @media screen and (max-width: 450px) {
+        width: 45px;
+        height: 45px;
+      }
     }
 
     input {
@@ -68,6 +73,11 @@ const ThoughtsCardStyles = styled.div`
       padding: 0.7rem;
       color: rgba(63, 61, 86, 0.38);
       font-size: 1.2rem;
+
+      @media screen and (max-width: 450px) {
+        width: 77%;
+        padding: 0.5rem;
+      }
     }
   }
   .bottoms {
@@ -77,18 +87,32 @@ const ThoughtsCardStyles = styled.div`
     justify-content: space-between;
     margin-top: 2rem;
 
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+
     p {
       font-weight: 500;
       font-size: 1.1rem;
       line-height: 27px;
       text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
+      @media screen and (max-width: 450px) {
+        font-weight: 300;
+      }
+
       span {
         margin-right: 0.5rem;
+        @media screen and (max-width: 450px) {
+          margin-right: 0;
+        }
       }
       &:nth-child(1) {
         padding-left: 1.5rem;
         color: #0693a0;
+        @media screen and (max-width: 450px) {
+          padding-left: 0.3rem;
+        }
       }
       &:nth-child(2) {
         padding-left: 1.5rem;
