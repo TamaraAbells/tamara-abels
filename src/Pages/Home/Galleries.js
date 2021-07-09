@@ -49,7 +49,7 @@ const {
 const FirstGallery = () => {
   return (
     <>
-      <GalleryStyles>
+      <GalleryStyles id="sp">
         {/* <div
           className="uk-position-relative uk-visible-toggle uk-light mobile"
           tabIndex="-1"
@@ -373,6 +373,17 @@ const GalleryStyles = styled.div`
     padding: 2rem;
   }
 
+  &#sp {
+    @media screen and (max-width: 1100px) {
+      display: block;
+
+      .slide {
+        bottom: -5%;
+        left: 10%;
+      }
+    }
+  }
+
   .first-left {
     width: 40%;
     display: flex;
@@ -409,7 +420,7 @@ const GalleryStyles = styled.div`
       }
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
       width: 100%;
       display: block;
 
@@ -426,7 +437,7 @@ const GalleryStyles = styled.div`
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
       width: 100%;
       height: auto;
       display: block;
@@ -631,7 +642,7 @@ const GalleryStyles = styled.div`
 
       @media screen and (max-width: 800px) {
         margin-bottom: 1rem;
-       }
+      }
 
       &:hover {
         img {

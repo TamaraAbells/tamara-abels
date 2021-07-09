@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import styled from "styled-components";
 import Images from "../../../Assets/Images/images";
+import { Link } from "react-router-dom";
 
 const TopNav = () => {
   const { icon, smallHeart, user } = Images;
@@ -19,7 +20,9 @@ const TopNav = () => {
       <TopNavStyles>
         <div className="nav-group">
           <div className="nav-logo">
-            <img src={icon} alt="Logo" />
+            <Link to="/">
+              <img src={icon} alt="Logo" />
+            </Link>
           </div>
           <ul className="nav-links">
             <li>Destinations</li>
@@ -97,6 +100,7 @@ const TopNavStyles = styled.div`
       height: 50px;
       border-radius: 100%;
       overflow: hidden;
+      margin-right: 2rem;
     }
 
     .nav-links {
