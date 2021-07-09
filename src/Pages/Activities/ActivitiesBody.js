@@ -21,4 +21,8 @@ const ActivitiesBodyStyles = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
 `;

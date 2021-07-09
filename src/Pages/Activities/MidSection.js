@@ -22,4 +22,8 @@ const MidSection = () => {
 export default MidSection;
 const MidSectionStyles = styled.div`
   width: 48%;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;

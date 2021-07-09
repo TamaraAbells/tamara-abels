@@ -15,4 +15,8 @@ const LeftSection = () => {
 export default LeftSection;
 const LeftSectionStyles = styled.div`
   width: 24.5%;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;

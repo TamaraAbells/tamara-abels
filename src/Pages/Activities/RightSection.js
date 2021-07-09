@@ -15,4 +15,7 @@ const RightSection = () => {
 export default RightSection;
 const RightSectionStyles = styled.div`
   width: 24.5%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
