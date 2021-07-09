@@ -55,7 +55,20 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
-  ${"" /* flex-box cases */}
+
+  .mobile {
+    display: none;
+    @media screen and (max-width: 789px) { 
+        display: block;
+    }
+  }
+
+  .web {
+    display: block;
+    @media screen and (max-width: 789px) { 
+        display: none;
+    }
+  }
 
 
 

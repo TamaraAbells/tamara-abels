@@ -47,11 +47,34 @@ const {
 } = Images;
 
 const FirstGallery = () => {
- 
   return (
     <>
       <GalleryStyles>
-        <div className="first-left">
+        {/* <div
+          className="uk-position-relative uk-visible-toggle uk-light mobile"
+          tabIndex="-1"
+          uk-slider="center: true"
+        >
+          <ul className="uk-slider-items uk-grid">
+            <li className="uk-width-3-4">
+              <div className="uk-panel">
+                <img src={gps} alt="gps" />
+              </div>
+            </li>
+            <li className="uk-width-3-4">
+              <div className="uk-panel">
+                <img src={rectangle2} alt="gps" />
+              </div>
+            </li>
+            <li className="uk-width-3-4">
+              <div className="uk-panel">
+                <img src={rectangle2} alt="gps" />
+              </div>
+            </li>
+            b
+          </ul>
+        </div> */}
+        <div className="first-left web">
           <aside>
             <div className="left1">
               <img src={gps} alt="gps" />
@@ -467,6 +490,7 @@ const GalleryStyles = styled.div`
     @media screen and (max-width: 800px) {
       position: static;
       margin-top: 2rem;
+      display: none;
     }
     .slide-item {
       width: 70px;
@@ -474,7 +498,7 @@ const GalleryStyles = styled.div`
       margin: 0 1rem;
 
       @media screen and (max-width: 800px) {
-        width: 30%;
+        width: 100%;
       }
 
       img {
@@ -494,6 +518,10 @@ const GalleryStyles = styled.div`
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      @media screen and (max-width: 800px) {
+        display: block;
+      }
       div {
         width: 24%;
         height: 150px;
@@ -501,6 +529,12 @@ const GalleryStyles = styled.div`
         border-radius: 20px;
         cursor: pointer;
         overflow: hidden;
+
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          height: 200px;
+          margin-bottom: 1rem;
+        }
 
         &:hover {
           img {
@@ -519,6 +553,11 @@ const GalleryStyles = styled.div`
             width: 60px;
             margin: auto;
             object-fit: contain;
+            @media screen and (max-width: 800px) {
+              width: 100%;
+              height: 200px;
+              margin-bottom: 1rem;
+            }
           }
         }
       }
@@ -545,6 +584,11 @@ const GalleryStyles = styled.div`
             transform: scale(1.2);
           }
         }
+
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
       }
     }
   }
@@ -555,6 +599,11 @@ const GalleryStyles = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
     grid-gap: 1.2rem;
     grid-auto-flow: dense;
+
+    @media (max-width: 800px) {
+      display: block;
+      width: 100%;
+    }
 
     &.fourth {
       grid-template-columns: repeat(auto-fill, minmax(14%, 1fr));
@@ -572,15 +621,6 @@ const GalleryStyles = styled.div`
       }
     }
 
-    @media (max-width: 789px) {
-      grid-template-columns: 50% 50%;
-      padding: 2.5rem;
-    }
-
-    @media (max-width: 450px) {
-      grid-template-columns: 100%;
-    }
-
     div {
       width: 100%;
       height: 220px;
@@ -588,6 +628,10 @@ const GalleryStyles = styled.div`
       border-radius: 20px;
       cursor: pointer;
       overflow: hidden;
+
+      @media screen and (max-width: 800px) {
+        margin-bottom: 1rem;
+       }
 
       &:hover {
         img {

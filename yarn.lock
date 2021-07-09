@@ -10921,6 +10921,11 @@ uikit-react@^3.1.2:
   dependencies:
     classnames "^2.2.5"
 
+uikit@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.7.0.tgz#1ec777ac547010d980f0c430249289080fa5371c"
+  integrity sha512-N0xluQ380EHey26toMmNA4H2YLtvVRHMaYksG31qDxW2VaAAf9i0Q0aT82zeMdrK2Tx9sqnHz6GaOMTIYYM0ZQ==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
