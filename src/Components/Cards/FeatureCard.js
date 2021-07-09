@@ -12,7 +12,7 @@ const FeatureCard = ({ title, noSub, cta }) => {
     <>
       <FeatureCardStyles>
         <div className="name">
-          <h5>{title ? title : "Featured Activities" }</h5>
+          <h5>{title ? title : "Featured Activities"}</h5>
           {noSub ? "" : <p>See Full Library </p>}
           {cta && (
             <button>
@@ -40,6 +40,10 @@ const FeatureCardStyles = styled.div`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
+
   button {
     padding: 0.4rem;
     background: rgba(255, 184, 184, 0.5);
@@ -53,7 +57,10 @@ const FeatureCardStyles = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    @media screen and (max-width: 450px) {
+      display: block;
+      width: 100%;
+    }
     .card {
       width: 120px;
       height: 105px;
@@ -64,6 +71,9 @@ const FeatureCardStyles = styled.div`
       align-items: center;
       justify-content: center;
       margin-top: 1rem;
+      @media screen and (max-width: 450px) {
+        width: 100%;
+      }
       img {
         display: block;
         width: 70px;

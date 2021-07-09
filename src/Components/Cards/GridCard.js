@@ -49,8 +49,8 @@ const GridCardStyles = styled.div`
       padding: 1.5rem;
     }
 
-    @media (max-width: 450px) {
-      grid-template-columns: 100%;
+    @media screen and (max-width: 450px) {
+      display: block;
     }
 
     .grid {

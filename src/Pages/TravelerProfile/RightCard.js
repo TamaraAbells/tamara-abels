@@ -37,4 +37,7 @@ const RightCard = () => {
 export default RightCard;
 const RightCardStyles = styled.div`
   width: 49%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;

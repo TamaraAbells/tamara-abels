@@ -79,4 +79,7 @@ const LeftCard = () => {
 export default LeftCard;
 const LeftCardStyles = styled.div`
   width: 49%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
