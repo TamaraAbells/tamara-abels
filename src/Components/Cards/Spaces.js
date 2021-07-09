@@ -68,6 +68,12 @@ const SpacesStyles = styled.div`
       padding: 0.4rem;
       background: rgba(76, 175, 80, 0.51);
       border-radius: 10px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-left: 0.3rem;
+      }
     }
   }
 
@@ -84,9 +90,19 @@ const SpacesStyles = styled.div`
     justify-content: space-between;
     position: relative;
 
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
     .img {
       height: 130px;
       overflow: hidden;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        height: 170px;
+        margin-bottom: 1rem;
+      }
 
       img {
         width: 100%;
@@ -102,6 +118,10 @@ const SpacesStyles = styled.div`
       div {
         &:nth-child(1) {
           margin-bottom: 2rem;
+
+          @media screen and (max-width: 600px) {
+            margin-bottom: 0;
+          }
         }
         h6 {
           font-weight: 500;
@@ -126,6 +146,12 @@ const SpacesStyles = styled.div`
       justify-content: space-between;
       flex-direction: column;
 
+      @media screen and (max-width: 600px) {
+        margin-top: 1rem;
+        display: block;
+        padding: 0 1rem;
+      }
+
       p {
         color: #2c66b8;
         font-size: 0.9rem;
@@ -145,6 +171,10 @@ const SpacesStyles = styled.div`
         display: flex;
         margin-bottom: auto;
         margin-top: 30%;
+
+        @media screen and (max-width: 600px) {
+          margin-top: 0.3rem;
+         }
         button {
           width: 97px;
           height: 30px;

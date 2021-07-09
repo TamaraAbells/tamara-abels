@@ -46,9 +46,16 @@ const FeatureCardStyles = styled.div`
   }
 
   button {
+    width: 100px;
     padding: 0.4rem;
     background: rgba(255, 184, 184, 0.5);
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 0.3rem;
+    }
   }
 
   .cards {
