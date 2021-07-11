@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { useDisclosure } from "@chakra-ui/react";
 import Images from "../../../Assets/Images/images";
+import ModalComponent from "../../Modal/Modal";
 
 const HomeNav = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <HomeNavStyles>
@@ -12,11 +15,19 @@ const HomeNav = () => {
             <img src={Images.icon} />
           </div>
           <div className="cta">
-            <button className="outline">sign up</button>
+            <button className="outline" onClick={onOpen}>
+              sign up
+            </button>
             <button className="filled">login</button>
           </div>
         </div>
       </HomeNavStyles>
+      <ModalComponent
+        isOpen={isOpen}
+        onClose={onClose}
+        title="Join Us"
+        img={Images.icon}
+      ></ModalComponent>
     </>
   );
 };
